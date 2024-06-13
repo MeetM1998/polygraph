@@ -1,0 +1,24 @@
+.gridCardLarge {
+  .gridCardSubHeaderInner {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+  .gridCardContentInner {
+    .paraContent {
+      font-size: 20px;
+    }
+  }
+  .waveChartParentBlock {
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gridCardLarge {
+    width: 100%;
+  }
+}

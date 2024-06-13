@@ -1,0 +1,16 @@
+
+.barChartContainer {
+    position: relative;
+    .barChartVerticleLabel {
+        position: absolute;
+        left: -90px;
+        top: 50%;
+        transform: rotate(-90deg) translatex(15%);
+    }
+    .barChartHorizontalLabel{
+        margin: auto;
+        width: 114px;
+        text-align: center;
+    }
+}
+

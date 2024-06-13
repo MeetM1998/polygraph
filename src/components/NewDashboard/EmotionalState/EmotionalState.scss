@@ -1,0 +1,47 @@
+.emotional-container {
+  width: 100%;
+  max-width: 50%;
+
+  .emotional {
+    display: flex;
+    margin-bottom: 16px;
+    .emotional-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+      padding-right: 14px;
+      color: var(--white);
+      margin-bottom: 0px;
+      margin-top: 0;
+    }
+  }
+  .emotional-graph {
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+    padding: 24px 20px;
+    .sub-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--white);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .spider-chart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      max-height: 350px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .emotional-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

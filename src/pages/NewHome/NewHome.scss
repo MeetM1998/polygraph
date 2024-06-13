@@ -1,0 +1,13 @@
+.HomeContainer {
+  .section-six {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    column-gap: 25px;
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

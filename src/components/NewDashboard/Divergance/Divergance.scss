@@ -1,0 +1,120 @@
+.divergence-content {
+  margin-top: 54px;
+  .divergence-container {
+    display: flex;
+    .divergence-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+      padding-right: 14px;
+      color: var(--white);
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+  }
+  .heatmap-container {
+    margin-top: 16px;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+    padding: 0px 53px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .heatmap-graph {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      max-width: 50%;
+
+      .graph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .svg-container {
+          width: 100%;
+          max-width: 550px;
+          .gl-container {
+            div {
+              position: unset !important;
+            }
+          }
+          .main-svg {
+            background: transparent !important;
+          }
+        }
+      }
+
+      .legends-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 1.8rem;
+        flex-wrap: wrap;
+
+        .legend-title {
+          margin-bottom: 0;
+          color: var(--white);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 3rem;
+          text-align: left;
+          display: flex;
+          column-gap: 0.5rem;
+        }
+      }
+    }
+    .ai-assesment {
+      .assesment-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--white);
+      }
+      .assesment-key-highlight {
+        .keys {
+          display: flex;
+
+          p {
+            margin-bottom: 0;
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 3rem;
+            text-align: left;
+            margin-top: 0;
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .divergence-content {
+    .heatmap-container {
+      display: flex;
+      padding: 0px 30px 40px;
+      .heatmap-graph {
+        width: 100%;
+        max-width: 100%;
+        .legends-container {
+          display: flex;
+          justify-content: space-around;
+          column-gap: 1.5rem;
+          .legend-title {
+            font-size: 1rem;
+          }
+        }
+      }
+      .ai-assesment {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+$blue-color : #0b1bd2;
+$primary-background : #f5fafc;
+$black-color: #000;
+$white-color : #fff;
+
+.earningBarContainer {
+    margin-top: 30px;
+    .iconContainer {
+        position: relative;
+        .downArrow {
+            font-size: 60px;
+            position: absolute;
+            left: 20%;
+            top: -17px;
+        }
+    }
+    .earningBarMain {
+        background-color: $blue-color;
+        height: 25px;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 20px;
+        .earningRoundOuter {
+            position: relative;
+            .earningRound {
+                height: 25px;
+                width: 25px;
+                position: absolute;
+                background: $white-color;
+                right: 50%;
+                border-radius: 15px;
+                .tooltipContainer {
+                    background-color: $primary-background;
+                }
+                .earningSubRound {
+                    height: 10px;
+                    width: 10px;
+                    position: absolute;
+                    background: $blue-color;
+                    top: 7.5px;
+                    border-radius: 15px;
+                    left: 7.5px;
+                }
+            }
+        }
+    }
+    .textContainer {
+        display: flex;
+        justify-content: space-between;
+        .verticalLeftDivider {
+            float: left;
+            border-color: $black-color;
+            height: 20px;
+            margin-top: 5px;
+        }
+        .verticalRightDivider {
+            float: right;
+            border-color: $black-color;
+            height: 20px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.MuiTooltip-popper {
+    &.MuiPopper-root {
+        .MuiTooltip-tooltip {
+            background-color: $primary-background;
+            color: $black-color;
+            .tooltip-container {
+                .tooltip-header {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .tooltip-text-container {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

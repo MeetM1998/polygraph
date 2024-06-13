@@ -1,0 +1,54 @@
+.section-hesitation {
+  margin-top: 64px;
+
+  .hesitation-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+
+    .hesitation-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+      color: var(--white);
+      margin-right: 14px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .hesitation-description {
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+    padding: 35px 99px;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: var(--white);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-hesitation {
+    .hesitation-description {
+      padding: 20px 40px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .section-hesitation {
+    margin-top: 24px;
+  }
+}

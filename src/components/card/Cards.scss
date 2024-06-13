@@ -1,0 +1,32 @@
+$action-color: #49dc48;
+$primary-background : #f5fafc;
+
+.MuiPaper-root {
+  &.card {
+    border-radius: 15px;
+    border: none;
+    .card-container {
+      background: $primary-background;
+      &:last-child {
+        padding-bottom: 15px;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .sub-title {
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      .action {
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: $action-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

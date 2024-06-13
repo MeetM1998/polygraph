@@ -1,0 +1,42 @@
+$primary-background: #f5fafc;
+$divider-color : #f0f3f3;
+
+.homeContainer {
+  padding: 20px;
+  padding-bottom: 0px;
+  .headerTitle {
+    font-size: 70px;
+    line-height: 60px;
+    font-weight: 500;
+    span {
+      font-weight: 200;
+    }
+  }
+  .divider {
+    height: 3px;
+    background-color: $divider-color;
+    margin-top: 30px;
+  }
+  .gridCardLarge {
+    background: $primary-background;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 15px 30px;
+    font-size: 18px;
+    min-height: 580px;
+  }
+  .gridCardHeaderInner {
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+  .gridCardContentInner {
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.management-container {
+  margin-top: 68px;
+
+  .managemet-behavior-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 21px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+    padding: 25px 20px 45px 20px;
+
+    .slick-dots {
+      bottom: -30px;
+      .slick-active {
+        button {
+          &::before {
+            color: var(--taupe-gray);
+          }
+        }
+      }
+      button {
+        &::before {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .management-container {
+    margin-top: 18px;
+  }
+}

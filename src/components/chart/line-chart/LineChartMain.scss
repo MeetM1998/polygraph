@@ -1,0 +1,19 @@
+.lineChartOuter {
+    position: relative;
+
+    .lineChartVerticle {
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        transform: rotate(-90deg) translatex(15%);
+      }
+      .lineChartInner {
+        height: 500px;
+      }
+      .lineChartHorizontal {
+        text-align: center;
+      }
+}
+
+
+

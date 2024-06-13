@@ -1,0 +1,16 @@
+$footer-primary : #d6e0e1;
+
+.footerOuter {
+  padding: 20px 50px;
+  background-color: $footer-primary;
+  align-items: center;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .footerOuterRight {
+    display: flex;
+    gap: 20px;
+  }
+}

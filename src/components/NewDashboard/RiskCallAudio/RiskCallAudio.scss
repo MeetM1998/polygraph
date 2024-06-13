@@ -1,0 +1,164 @@
+.risk-call-audio-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  row-gap: 1rem;
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .risk-container {
+    padding: 26px 20px 20px 18px;
+    width: 100%;
+    max-width: 332px;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+
+    .risk {
+      padding-left: 34px;
+      .risk-level-since {
+        display: flex;
+        padding-top: 20px;
+
+        .risk-level-title {
+          width: 182px;
+          vertical-align: middle;
+
+          font-weight: 100;
+          font-size: 16px;
+          line-height: 19px;
+          color: var(--white);
+          padding-left: 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .call-container {
+    padding: 26px 20px 20px 18px;
+    width: 100%;
+    max-width: 332px;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+
+    .call-sub {
+      padding-left: 8px;
+      .call-total-time {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 19px;
+        color: var(--white);
+        margin-top: 0;
+      }
+      .pr-qa-container {
+        display: flex;
+
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--white);
+
+        svg.recharts-surface {
+          position: absolute;
+          left: -30px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .audio-container {
+    padding: 26px 20px 20px 18px;
+    width: 100%;
+    max-width: 332px;
+    border-radius: 20px;
+    background-color: var(--raisin-black);
+
+    .graph {
+      padding-left: 18px;
+      .audio-quality {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 19px;
+        color: var(--white);
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .bar-chart {
+        .recharts-wrapper {
+          width: 100%;
+          max-width: 270px;
+          height: 100%;
+          max-height: 150px;
+
+          .dashboard-container {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .risk-call-audio-container {
+    row-gap: 2.5rem;
+
+    .risk-container {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+
+      .risk {
+        padding-left: 0;
+        .risk-level-since {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .call-container {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      .call-duration-title {
+        margin-bottom: 0;
+      }
+      .call-sub {
+        .pr-qa-container {
+          justify-content: center;
+          .recharts-wrapper {
+            .svg.recharts-surface {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .audio-container {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+
+      .graph {
+        .bar-chart {
+          display: flex;
+          justify-content: center;
+          .recharts-wrapper {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
